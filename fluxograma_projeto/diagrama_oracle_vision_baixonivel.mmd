@@ -1,0 +1,33 @@
+graph TD
+    %% Área de Preparação
+    subgraph "1. Preparação (Storage)"
+        Img["Imagens Locais\n(Treino/Valid)"] -->|Upload| Bucket["OCI Bucket\ndataset_containers_brado"]
+        Json["Anotações COCO\ncoco_annotations.json"] -->|Upload| Bucket
+    end
+
+    %% Área de Data Labeling
+    subgraph "2. Organização (Data Labeling)"
+        Bucket -->|Importar| DLS["OCI Data Labeling\nDataset V1"]
+        DLS -->|Validar Imagens| DLS
+        DLS -->|<b>PASSO CRUCIAL</b>\nExportar Manualmente| Jsonl["Arquivo Mestre\nexport_v1_final.jsonl"]
+        Jsonl -.->|Salva de volta| Bucket
+    end
+
+    %% Área de Visão Computacional
+    subgraph "3. Inteligência (OCI Vision)"
+        Bucket -->|Lê o arquivo .jsonl| ModelConfig["Configurar Modelo\nTipo: Object Detection"]
+        ModelConfig -->|Data Source: Object Storage| Train["Treinamento\nMode: Recommended"]
+        Train -->|Aguardar 4-6h| ModelActive{"Modelo Ativo\n(Verde)"}
+    end
+
+    %% Área de Uso
+    subgraph "4. Teste e Uso"
+        ModelActive -->|Validar| TestWeb["Teste Visual\n(Console OCI)"]
+        ModelActive -->|Automatizar| Python["Script Python\n(SDK OCI)"]
+        Python -->|Resultado| DanoDetect["Dano Detectado\n(JSON com Coordenadas)"]
+    end
+
+    %% Estilização
+    style Jsonl fill:#f9f,stroke:#333,stroke-width:2px,color:black
+    style ModelActive fill:#9f9,stroke:#333,stroke-width:2px,color:black
+    style DLS fill:#ff9,stroke:#333,color:black

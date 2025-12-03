@@ -1,0 +1,4 @@
+2025-11-27 16:50:21,428 - MainThread - __main__ - INFO - --- Iniciando o Treinamento do Modelo de Detecção de Danos ---
+2025-11-27 16:50:21,790 - MainThread - __main__ - INFO - Modelo YOLOv8 pré-treinado ('yolov8n.pt') carregado com sucesso.
+2025-11-27 16:50:21,790 - MainThread - __main__ - INFO - Usando o arquivo de configuração do dataset: dataset_Container_Damage_Detection.v1i.yolov8/data.yaml
+2025-11-27 16:50:21,790 - MainThread - __main__ - INFO - Iniciando o treinamento. Este processo pode levar algum tempo...

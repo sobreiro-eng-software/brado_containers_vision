@@ -1,0 +1,42 @@
+graph LR
+    %% Estilos
+    classDef storage fill:#fff3e0,stroke:#ef6c00,stroke-width:2px;
+    classDef label fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;
+    classDef brain fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:black;
+    classDef process fill:#e1f5fe,stroke:#0277bd,stroke-width:2px;
+    classDef decision fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
+
+    %% Entradas
+    NewPhoto["📸 Nova Foto\n(Do Gate/App)"]:::process
+
+    %% O ECOSSISTEMA DA IA
+    subgraph "Ecossistema de Inteligência (Oracle Cloud)"
+        
+        %% A Origem (Treinamento)
+        subgraph "1. Base de Conhecimento (Treino)"
+            Bucket["🗄️ Bucket\n(Imagens Históricas)"]:::storage
+            DLS["🏷️ Data Labeling\n(Marcação Manual)"]:::label
+        end
+
+        %% O Motor (Execução)
+        subgraph "2. Motor de Decisão (Runtime)"
+            Model(("🧠 Modelo V1\n(Cérebro Ativo)")):::brain
+            Analysis["🔍 Varredura\n(Detecção)"]:::process
+            Filter{"Confiança\n > 50%?"}:::label
+        end
+
+        %% Saída
+        Result["📝 Resultado\n(JSON: Amassado/Furo)"]:::decision
+
+    end
+
+    %% Conexões do Treino (Como a IA aprendeu)
+    Bucket -->|Fornece Fotos| DLS
+    DLS -->|Ensina Padrões| Model
+
+    %% Conexões da Execução (O que acontece agora)
+    NewPhoto -->|Entra| Analysis
+    Model -.->|Aplica Inteligência| Analysis
+    Analysis --> Filter
+    Filter -->|Sim| Result
+    Filter -->|Não| Clean["✅ Íntegro"]:::decision

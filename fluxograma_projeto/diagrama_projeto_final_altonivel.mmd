@@ -1,0 +1,39 @@
+graph LR
+    %% Estilos
+    classDef input fill:#e1f5fe,stroke:#0277bd,stroke-width:2px,color:black;
+    classDef brain fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:black;
+    classDef output fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:black;
+    classDef action fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:black;
+
+    %% 1. Captura
+    subgraph "1. Captura (Operação)"
+        Gate["📸 Câmeras do Gate\n(Entrada/Saída)"]:::input
+        Mobile["📱 App do Inspetor\n(Pátio)"]:::input
+    end
+
+    %% 2. Inteligência
+    subgraph "2. Inteligência Artificial (Oracle Cloud)"
+        API["📡 API de Integração\n(Middleware)"]:::brain
+        Vision(("🧠 Oracle Vision\n(Modelo Treinado)")):::brain
+    end
+
+    %% 3. Decisão
+    subgraph "3. Decisão de Negócio"
+        System["💻 Sistema Brado\n(ERP / Dashboard)"]:::output
+    end
+
+    %% 4. Ação
+    subgraph "4. Ação Real"
+        Maintenance["🛠️ Ordem de Serviço\n(Reparo)"]:::action
+        Release["✅ Liberação Automática\n(Gate Pass)"]:::action
+    end
+
+    %% Conexões
+    Gate -->|Envia Imagem| API
+    Mobile -->|Envia Imagem| API
+    API -->|Processa| Vision
+    Vision -->|Detecta: Amassado/Furo| API
+    API -->|JSON: 'Dano Crítico'| System
+
+    System -->|Se Dano > 80%| Maintenance
+    System -->|Se Íntegro| Release

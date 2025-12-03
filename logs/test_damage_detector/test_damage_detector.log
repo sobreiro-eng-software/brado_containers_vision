@@ -1,0 +1,28 @@
+2025-11-26 10:54:08,133 - MainThread - __main__ - INFO - --- Iniciando teste do Detector de Danos em Contêineres ---
+2025-11-26 10:54:08,136 - MainThread - __main__ - ERROR - Imagem de teste não encontrada em: Container Damage Detection.v1i.yolov8/test/images/59f33f_16f14d8150864225820ed09de5089a5a-mv2_jpg.rf.ae6588963aa1b6fecb7be8b3944d68a6.jpg
+2025-11-26 10:54:08,136 - MainThread - __main__ - INFO - --- Teste concluído ---
+2025-11-26 10:56:07,103 - MainThread - __main__ - INFO - --- Iniciando teste do Detector de Danos em Contêineres ---
+2025-11-26 10:56:07,105 - MainThread - __main__ - INFO - Carregando imagem de teste: Container_Damage_Detection.v1i.yolov8/test/images/59f33f_16f14d8150864225820ed09de5089a5a-mv2_jpg.rf.ae6588963aa1b6fecb7be8b3944d68a6.jpg
+2025-11-26 10:56:07,107 - MainThread - __main__ - INFO - Executando detecção de danos...
+2025-11-26 10:56:07,633 - MainThread - __main__ - INFO - Nenhum dano detectado na imagem de exemplo.
+2025-11-26 10:56:07,633 - MainThread - __main__ - INFO - --- Teste concluído ---
+2025-11-26 10:57:31,725 - MainThread - __main__ - INFO - --- Iniciando teste do Detector de Danos em Contêineres ---
+2025-11-26 10:57:31,727 - MainThread - __main__ - INFO - Carregando imagem de teste: Container_Damage_Detection.v1i.yolov8/test/images/59f33f_16f14d8150864225820ed09de5089a5a-mv2_jpg.rf.ae6588963aa1b6fecb7be8b3944d68a6.jpg
+2025-11-26 10:57:31,729 - MainThread - __main__ - INFO - Executando detecção de danos...
+2025-11-26 10:57:32,412 - MainThread - __main__ - INFO - Nenhum dano detectado na imagem de exemplo.
+2025-11-26 10:57:32,412 - MainThread - __main__ - INFO - --- Teste concluído ---
+2025-11-27 16:38:17,286 - MainThread - __main__ - INFO - --- Iniciando teste do Detector de Danos em Contêineres ---
+2025-11-27 16:38:22,629 - MainThread - __main__ - INFO - Carregando imagem de teste: Dataset_Conteineres_vision/damaged/container_1.jpg
+2025-11-27 16:38:27,158 - MainThread - __main__ - INFO - Executando detecção de danos...
+2025-11-27 16:39:52,259 - MainThread - __main__ - INFO - Nenhum dano detectado na imagem de exemplo.
+2025-11-27 16:39:52,260 - MainThread - __main__ - INFO - --- Teste concluído ---
+2025-11-27 16:42:18,211 - MainThread - __main__ - INFO - --- Iniciando teste do Detector de Danos em Contêineres ---
+2025-11-27 16:42:21,568 - MainThread - __main__ - INFO - Carregando imagem de teste: Dataset_Conteineres_vision/damaged/container_1.jpg
+2025-11-27 16:42:22,651 - MainThread - __main__ - INFO - Executando detecção de danos...
+2025-11-27 16:44:19,538 - MainThread - __main__ - INFO - Nenhum dano detectado na imagem de exemplo.
+2025-11-27 16:44:19,538 - MainThread - __main__ - INFO - --- Teste concluído ---
+2025-11-27 16:44:33,490 - MainThread - __main__ - INFO - --- Iniciando teste do Detector de Danos em Contêineres ---
+2025-11-27 16:44:39,498 - MainThread - __main__ - INFO - Carregando imagem de teste: Dataset_Conteineres_vision/damaged/container_1.jpg
+2025-11-27 16:44:42,689 - MainThread - __main__ - INFO - Executando detecção de danos...
+2025-11-27 16:45:17,518 - MainThread - __main__ - INFO - Nenhum dano detectado na imagem de exemplo.
+2025-11-27 16:45:17,518 - MainThread - __main__ - INFO - --- Teste concluído ---

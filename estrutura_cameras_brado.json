@@ -1,0 +1,206 @@
+{
+    "portao1": {
+        "camera_frontal": {
+            "camera_id": "OCRDIANTEIRA",
+            "type": "rtsp",
+            "user": "admin",
+            "password": "2020brado",
+            "ip": "10.22.30.145",
+            "connect_timeout": 10,
+            "read_timeout": 5,
+            "max_retries": 3
+        },
+        "camera_container": {
+            "entrada": [
+                {
+                    "camera_id": "CONTAINERLATERALESQUERDA",
+                    "type": "rest",
+                    "user": "admin",
+                    "password": "123",
+                    "ip": "10.22.30.129"
+                },
+                {
+                    "camera_id": "CONTAINERLATERALDIREITA",
+                    "type": "rest",
+                    "user": "admin",
+                    "password": "123",
+                    "ip": "10.22.30.130"
+                },
+                {
+                    "camera_id": "CONTAINERPORTA",
+                    "type": "rest",
+                    "user": "admin",
+                    "password": "123",
+                    "ip": "10.22.30.146"
+                },
+                {
+                    "camera_id": "CONTAINERSUPERIOR",
+                    "type": "rest",
+                    "user": "admin",
+                    "password": "123",
+                    "ip": "10.22.30.155"
+                }
+            ],
+            "saida": [
+                {
+                    "camera_id": "CONTAINERLATERALESQUERDA",
+                    "type": "rest",
+                    "user": "admin",
+                    "password": "123",
+                    "ip": "10.22.30.132"
+                },
+                {
+                    "camera_id": "CONTAINERLATERALDIREITA",
+                    "type": "rest",
+                    "user": "admin",
+                    "password": "123",
+                    "ip": "10.22.30.131"
+                },
+                {
+                    "camera_id": "CONTAINERPORTA",
+                    "type": "rest",
+                    "user": "admin",
+                    "password": "123",
+                    "ip": "10.22.30.148"
+                },
+                {
+                    "camera_id": "CONTAINERSUPERIOR",
+                    "type": "rest",
+                    "user": "admin",
+                    "password": "123",
+                    "ip": "10.22.30.159"
+                }
+            ]
+        },
+        "camera_saida": {
+            "camera_id": "OCRSAIDA",
+            "type": "rtsp",
+            "user": "admin",
+            "password": "2020brado",
+            "ip": "10.22.30.147",
+            "connect_timeout": 10,
+            "read_timeout": 5,
+            "max_retries": 3
+        }
+    },
+    "portao4": {
+        "camera_frontal": {
+            "camera_id": "OCRDIANTEIRA",
+            "type": "rtsp",
+            "user": "admin",
+            "password": "2020brado",
+            "ip": "10.22.30.143",
+            "connect_timeout": 10,
+            "read_timeout": 5,
+            "max_retries": 3
+        },
+        "camera_container": {
+            "entrada": [
+                {
+                    "camera_id": "CONTAINERLATERALESQUERDA",
+                    "type": "rest",
+                    "user": "admin",
+                    "password": "123",
+                    "ip": "10.22.30.128"
+                },
+                {
+                    "camera_id": "CONTAINERLATERALDIREITA",
+                    "type": "rest",
+                    "user": "admin",
+                    "password": "123",
+                    "ip": "10.22.30.127"
+                },
+                {
+                    "camera_id": "CONTAINERPORTA",
+                    "type": "rest",
+                    "user": "admin",
+                    "password": "123",
+                    "ip": "10.22.30.136"
+                },
+                {
+                    "camera_id": "CONTAINERSUPERIOR",
+                    "type": "rest",
+                    "user": "admin",
+                    "password": "123",
+                    "ip": "10.22.30.156"
+                }
+            ],
+            "saida": []
+        },
+        "camera_saida": {}
+    },
+    "portao6": {
+            "camera_frontal": {
+                "camera_id": "OCRDIANTEIRA",
+                "type": "rtsp",
+                "user": "admin",
+                "password": "2020brado",
+                "ip": "10.22.30.139",
+                "connect_timeout": 10,
+                "read_timeout": 5,
+                "max_retries": 3
+            },
+            "camera_container": {
+                "entrada": [
+                    {
+                        "camera_id": "CONTAINERLATERALESQUERDA",
+                        "type": "rest",
+                        "user": "admin",
+                        "password": "123",
+                        "ip": "10.22.30.124"
+                    },
+                    {
+                        "camera_id": "CONTAINERLATERALDIREITA",
+                        "type": "rest",
+                        "user": "admin",
+                        "password": "123",
+                        "ip": "10.22.30.123"
+                    },
+                    {
+                        "camera_id": "CONTAINERPORTA",
+                        "type": "rest",
+                        "user": "admin",
+                        "password": "123",
+                        "ip": "10.22.30.140"
+                    },
+                    {
+                        "camera_id": "CONTAINERSUPERIOR",
+                        "type": "rest",
+                        "user": "admin",
+                        "password": "123",
+                        "ip": "10.22.30.158"
+                    }
+                ],
+                "saida": [
+                    {
+                        "camera_id": "CONTAINERLATERALESQUERDA",
+                        "type": "rest",
+                        "user": "admin",
+                        "password": "123",
+                        "ip": "10.22.30.138"
+                    },
+                    {
+                        "camera_id": "CONTAINERLATERALDIREITA",
+                        "type": "rest",
+                        "user": "admin",
+                        "password": "123",
+                        "ip": "10.22.30.137"
+                    },
+                    {
+                        "camera_id": "CONTAINERPORTA",
+                        "type": "rest",
+                        "user": "admin",
+                        "password": "123",
+                        "ip": "10.22.30.154"
+                    },
+                    {
+                        "camera_id": "CONTAINERSUPERIOR",
+                        "type": "rest",
+                        "user": "admin",
+                        "password": "123",
+                        "ip": "10.22.30.162"
+                    }
+                ]
+            }
+        }
+    }
